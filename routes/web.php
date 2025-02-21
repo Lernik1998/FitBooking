@@ -14,10 +14,12 @@ Route::get('/', function () {
     return view('index');
 })->name('index');
 
+
 // Por ahora lo mantengo aquí, para posibles gestiones locales
-// Route::get('/dashboard', function () {
-//     return view('dashboard');
-// })->middleware(['auth', 'verified'])->name('dashboard');
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth', 'verified'])->name('dashboard');
+
 
 // Middleware 'auth' para que se acceda a la ruta solo si se ha autenticado
 Route::middleware('auth')->group(function () {
@@ -37,6 +39,7 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/admin/planes', [AdminController::class, 'planes'])->name('admin.planesAdmin');
 
     Route::resource('customer', CustomerController::class);
+
     Route::resource('instructors', InstructorController::class);
 
     Route::post('/instructor/bind/{idAct}/{idIns}', [InstructorController::class, 'bindInstructor'])->name('instructors.bind');
@@ -47,3 +50,4 @@ Route::middleware(['auth'])->group(function () {
 });
 
 require __DIR__ . '/auth.php';
+

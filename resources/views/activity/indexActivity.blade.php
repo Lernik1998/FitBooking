@@ -35,7 +35,7 @@
                         </p>
                     </div>
 
-                    <dd>{{ $activity->image }}</dd>
+                    {{--<dd>{{ $activity->image }}</dd>--}}
                     <div class="flex justify-center">
                         <img src="/images/acts/{{ $activity->image }}" alt="Imagen de la actividad"
                             class="object-cover w-48 h-48 rounded-full">

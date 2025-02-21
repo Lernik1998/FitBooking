@@ -38,7 +38,7 @@
         <label for="role" class="font-semibold text-lg text-gray-700 mb-2">Rol</label>
         <select name="role" id="role"
             class="block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm text-gray-900">
-            <option value="customer" {{ (isset($customer) && $customer->role == 'customer') ? 'selected' : '' }}>
+            <option value="customer" {{ (isset($customer) && $customer->role == 'user') ? 'selected' : '' }}>
                 Cliente</option>
             <option value="admin" {{ (isset($customer) && $customer->role == 'admin') ? 'selected' : '' }}>
                 Administrador
