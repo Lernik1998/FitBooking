@@ -5,15 +5,15 @@ FitBooking es una aplicación web diseñada para gestionar reservas de clases de
 ## Características
 
 - Registro y autenticación de usuarios
-- Búsqueda de clases por tipo, fecha y disponibilidad
 - Reservas en tiempo real
 - Gestión de perfil de usuario
 - Notificaciones por correo electrónico
+- Interfaz de usuario intuitiva
 
 ## Tecnologías utilizadas
 
 - **Backend**: Laravel
-- **Frontend**: Vue.js (o cualquier otro framework que estés utilizando)
+- **Frontend**: Blade
 - **Base de datos**: MySQL
 - **Otros**: Composer, NPM
 
